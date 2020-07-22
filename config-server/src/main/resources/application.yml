@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/isheian/cloud-config.git
+          search-paths: {application}
+          username: heian@126.com
+          password: lengfeng.888
+          # 指定配置文件从本地获取的位置
+#        native:
+#          search-locations: file://E:/ideaProjects/config
+#  profiles:
+#    # 设置从 classpath 下查找配置文件
+#    active: native
+
+server:
+  port: 11117
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:11111/eureka
+
+
+#logging:
+#  level:
+#    org.springframework.cloud.gateway: debug

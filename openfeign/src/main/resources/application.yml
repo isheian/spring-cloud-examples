@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: openfeign
+
+server:
+  port: 12000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:11111/eureka
+
+logging:
+  level:
+    cn.cccii.openfeign.service.*: debug
+
+feign:
+  hystrix:
+    enabled: true

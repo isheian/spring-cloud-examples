@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: server1
+  cloud:
+    config:
+      label: master
+      uri: http://127.0.0.1:11117
+      profile: prod
+#      discovery:
+#        # 开启发现 config-server 功能
+#        enabled: true
+#        service-id: config-server
+
+server:
+  port: 11118
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:11111/eureka
+
+
+#logging:
+#  level:
+#    org.springframework.cloud.gateway: debug

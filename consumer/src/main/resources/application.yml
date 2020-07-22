@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: consumer
+
+server:
+  port: 11120
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:11111/eureka
